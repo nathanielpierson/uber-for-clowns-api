@@ -15,6 +15,20 @@ ActiveRecord::Schema[7.2].define(version: 2025_02_21_002543) do
     t.string "name"
     t.string "specialty"
     t.integer "rates"
+  end
+  create_table "bookings", force: :cascade do |t|
+    t.integer "clown_id"
+    t.integer "user_id"
+    t.integer "duration"
+    t.integer "rating"
+    t.time "arrival_time"
+    t.time "departure_time"
+    t.date "event_date"
+  end
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
