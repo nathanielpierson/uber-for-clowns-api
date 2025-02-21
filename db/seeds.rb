@@ -22,3 +22,7 @@ user.save
 Clown.create(name: "Bozo", specialty: "Large shoes", rates: 150)
 Clown.create(name: "Krusty", specialty: "Balloon animals", rates: 180)
 Clown.create(name: "Pennywise", specialty: "Sharp teeth", rates: 210)
+
+Booking.create(clown_id: 1, user_id: 1, duration: 1800, rating: 3, arrival_time: "19:00:00", departure_time: "19:30:00", event_date: "2025-02-21")
+Booking.create(clown_id: 2, user_id: 3, duration: 3600, rating: 5, arrival_time: "12:00:00", departure_time: "13:00:00", event_date: "2025-02-24")
+Booking.create(clown_id: 3, user_id: 5, duration: 1800, rating: 1, arrival_time: "11:00:00", departure_time: "11:30:00", event_date: "2025-02-26")
