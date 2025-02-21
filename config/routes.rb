@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   patch "clowns/:id" => "clowns#update"
   delete "clowns/:id" => "clowns#destroy"
 
-  get "bookings" => "bookings#index"
+  get "/bookings" => "bookings#index"
   get "bookings/:id" => "bookings#show"
   post "bookings" => "bookings#create"
   patch "bookings/:id" => "bookings#update"

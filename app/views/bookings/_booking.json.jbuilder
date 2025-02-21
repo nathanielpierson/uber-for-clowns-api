@@ -5,4 +5,4 @@ json.duration       booking.duration
 json.rating         booking.rating
 json.arrival_time   booking.arrival_time
 json.departure_time booking.departure_time
-json.event_date     bookig.event_date
+json.event_date     booking.event_date
