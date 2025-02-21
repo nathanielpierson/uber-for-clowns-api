@@ -9,6 +9,24 @@ Rails.application.routes.draw do
   get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
+  get "users" => "users#index"
+  get "users/:id" => "users#show"
+  post "users" => "users#create"
+  patch "users/:id" => "users#update"
+  delete "users/:id" => "users#destroy"
+
+  get "clowns" => "clowns#index"
+  get "clowns/:id" => "clowns#show"
+  post "clowns" => "clowns#create"
+  patch "clowns/:id" => "clowns#update"
+  delete "clowns/:id" => "clowns#destroy"
+
+  get "bookings" => "bookings#index"
+  get "bookings/:id" => "bookings#show"
+  post "bookings" => "bookings#create"
+  patch "bookings/:id" => "bookings#update"
+  delete "bookings/:id" => "bookings#destroy"
+
   # Defines the root path route ("/")
   # root "posts#index"
 end
