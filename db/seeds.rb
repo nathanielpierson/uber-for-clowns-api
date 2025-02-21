@@ -7,3 +7,8 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+
+Clown.create(name: "Bozo", specialty: "Large shoes", rates: 150)
+Clown.create(name: "Krusty", specialty: "Balloon animals", rates: 180)
+Clown.create(name: "Pennywise", specialty: "Sharp teeth", rates: 210)
