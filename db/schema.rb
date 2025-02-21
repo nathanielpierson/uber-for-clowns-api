@@ -19,7 +19,10 @@ ActiveRecord::Schema[7.2].define(version: 2025_02_21_002509) do
     t.time "arrival_time"
     t.time "departure_time"
     t.date "event_date"
-    
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"
