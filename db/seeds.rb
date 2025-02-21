@@ -18,3 +18,7 @@ user = User.new(username: "StephenKing68", email: "KephenSting@email.com", passw
 user.save
 user = User.new(username: "BrianLovesClowns", email: "clowneybrian@email.com", password_digest: "password")
 user.save
+
+Clown.create(name: "Bozo", specialty: "Large shoes", rates: 150)
+Clown.create(name: "Krusty", specialty: "Balloon animals", rates: 180)
+Clown.create(name: "Pennywise", specialty: "Sharp teeth", rates: 210)
