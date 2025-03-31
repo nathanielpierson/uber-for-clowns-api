@@ -12,6 +12,9 @@ class ClownsController < ApplicationController
   def create
     @clown = Clown.create(
       name: params[:name],
+      email: params[:email],
+      password: params[:password],
+      password_digest: params[:password_digest],
       specialty: params[:specialty],
       rates: params[:rates],
     )

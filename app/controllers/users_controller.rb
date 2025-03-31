@@ -11,7 +11,8 @@ class UsersController < ApplicationController
     @user = User.create(
       username: params[:username],
       email: params[:email],
-      password: params[:password]
+      password: params[:password],
+      password_confirmation: params[:password_confirmation]
     )
   end
   def update
@@ -19,7 +20,8 @@ class UsersController < ApplicationController
     @user.update(
       username: params[:username],
       emails: params[:email],
-      password: params[:password]
+      password: params[:password],
+      password_confirmation: params[:password_confirmation]
     )
   end
   def destroy
