@@ -28,6 +28,8 @@ Rails.application.routes.draw do
   delete "bookings/:id" => "bookings#destroy"
 
   post "/sessions" => "sessions#create"
+
+  post "/clowns_sessions" => "clowns_sessions#create"
   # Defines the root path route ("/")
   # root "posts#index"
   # 
