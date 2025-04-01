@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   get "clowns" => "clowns#index"
   get "clowns/:id" => "clowns#show"
-  post "clowns" => "clowns#create"
+  post "/clowns" => "clowns#create"
   patch "clowns/:id" => "clowns#update"
   delete "clowns/:id" => "clowns#destroy"
 
@@ -27,6 +27,7 @@ Rails.application.routes.draw do
   patch "bookings/:id" => "bookings#update"
   delete "bookings/:id" => "bookings#destroy"
 
+  post "/sessions" => "sessions#create"
   # Defines the root path route ("/")
   # root "posts#index"
   # 
