@@ -14,9 +14,9 @@ class ClownsController < ApplicationController
       name: params[:name],
       email: params[:email],
       password: params[:password],
-      password_digest: params[:password_digest],
+      password_confirmation: params[:password_confirmation],
       specialty: params[:specialty],
-      rates: params[:rates],
+      rates: params[:rates]
     )
     render :show
   end
